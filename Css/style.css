@@ -1,0 +1,96 @@
+/*paleta de colores
+03045E
+023E8A
+0077B6
+0096C7
+00B4D8
+48CAE4
+90E0EF
+ADE8F4
+CAF0F8
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@300;400;700;900&display=swap');
+/*font family - lo de arriba*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header-flex{
+    background-color: #CAF0F8 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+}
+.header-flex ul{
+    display: flex;
+    list-style: none;
+    /*width: 100vw;
+    justify-content: space-around;*/
+}
+.hader-flex li{
+    margin: 0.5rem;
+}
+.header a{
+    color: #023E8A;
+    text-decoration: none;
+}
+/*CONTENIDO PRINCIPAL*/
+.banner-hero{
+    background-image: url(https://raulpalma.es/wp-content/uploads//2020/01/Tetris_lenovo_0246-1.jpg);
+    height: 50vh;
+    background-size:cover;
+}
+.banner-hero h1{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 30%;
+}
+
+/*producto*/
+.producto{
+    width: 50vw;
+    text-align: center;
+    /*margin: .5rem*/
+    ;
+}
+.producto img{
+    width: 40vw;
+    border-radius: 10%;
+
+}
+/*grilla de productos*/
+.productos-grid{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    padding: 2rem;
+}
+.footer p{
+    text-align: center;
+    background-color: ·ADE8F4;
+    color: #90E0EF;
+    padding: 1rem;
+}
+/*el siguiente @media es aplicado cuando se diseña primero en mobile*/
+@media (min-width: 768px){
+    .header-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .banner-hero{
+        background-position: center;
+        height: 100vh;
+        background-size: cover;
+    }
+    .productos-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .producto img{
+        width: 20vw;
+    }
+}
