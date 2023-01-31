@@ -53,7 +53,7 @@ CAF0F8
 
 /*producto*/
 .producto{
-    width: 50vw;
+    width: 20vw;
     text-align: center;
     /*margin: .5rem*/
     ;
@@ -88,7 +88,8 @@ CAF0F8
         background-size: cover;
     }
     .productos-grid{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 25%
+        );
     }
     .producto img{
         width: 20vw;
